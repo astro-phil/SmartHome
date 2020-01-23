@@ -279,20 +279,8 @@ class NewVoice(object):
                 for termin in termine:
                     if termin[4] != datetime.now().weekday():
                         if last != termin[4]:
-                            if termin[4] == 0:
-                                text.append("monday")
-                            elif termin[4] == 1:
-                                text.append("tuesday")
-                            elif termin[4] == 2: 
-                                text.append("wednesday")
-                            elif termin[4] == 3: 
-                                text.append("thursday")
-                            elif termin[4] == 4: 
-                                text.append("friday")
-                            elif termin[4] == 5: 
-                                text.append("saturday")
-                            elif termin[4] == 6: 
-                                text.append("sunday")
+                            days = ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"]
+                            text.append(days[termin[4]])
                         else:
                             text.append("and")
                         text.append(termin[0])
@@ -304,20 +292,8 @@ class NewVoice(object):
                         text.append("event")
                     else:
                         text.append("event_7")
-                    if termin[4] == 0:
-                        text.append("monday")
-                    elif termin[4] == 1:
-                        text.append("tuesday")
-                    elif termin[4] == 2: 
-                        text.append("wednesday")
-                    elif termin[4] == 3: 
-                        text.append("thursday")
-                    elif termin[4] == 4: 
-                        text.append("friday")
-                    elif termin[4] == 5: 
-                        text.append("saturday")
-                    elif termin[4] == 6: 
-                        text.append("sunday")
+                    days = ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"]
+                    text.append(days[termin[4]])
                     text.append(termin[0])
         if len(text) < 1:
             if use_text:
