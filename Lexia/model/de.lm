@@ -1,0 +1,317 @@
+language model created by quicklm on sat apr 27 08:04:44 edt 2019
+copyright (c) 1996-2010 carnegie mellon university and alexander i. rudnicky
+
+the model is in standard arpa format, designed by doug paul while he was at mitre.
+
+the code that was used to produce this language model is available in open source.
+please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+the (fixed) discount mass is 0.5. the backoffs are computed using the ratio method.
+this model based on a corpus of 25 sentences and 73 words
+
+\data\
+ngram 1=73
+ngram 2=113
+ngram 3=108
+
+\1-grams:
+-1.1179 </s> -0.3010
+-1.1179 <s> -0.2461
+-2.5159 am -0.2997
+-2.0388 an -0.2666
+-2.5159 anschalten -0.2666
+-2.5159 antwort -0.2984
+-2.5159 auf -0.2997
+-2.5159 aus -0.2666
+-2.5159 automatik -0.2666
+-2.5159 bett -0.2997
+-1.9138 bitte -0.2520
+-2.5159 blau -0.2997
+-2.5159 computer -0.2666
+-1.6708 das -0.2903
+-2.0388 den -0.2970
+-2.0388 die -0.2930
+-2.5159 du -0.2957
+-2.5159 ein -0.2666
+-2.5159 einen -0.2997
+-2.5159 erzaehle -0.2997
+-2.5159 es -0.2984
+-2.5159 farben -0.2666
+-2.5159 fuer -0.2997
+-2.5159 gruen -0.2997
+-2.5159 heute -0.2666
+-2.2148 ist -0.2652
+-2.5159 ja -0.2984
+-2.5159 kannst -0.2997
+-2.5159 kims -0.2997
+-2.5159 lasse -0.2917
+-2.5159 lauter -0.2997
+-2.5159 leiser -0.2666
+-1.7377 lexia -0.2765
+-1.7377 licht -0.2903
+-2.2148 lied -0.2666
+-2.5159 lila -0.2997
+-2.0388 mir -0.2903
+-2.5159 morgen -0.2666
+-1.9138 musik -0.2623
+-2.5159 naechste -0.2984
+-2.5159 nein -0.2666
+-2.5159 oder -0.2997
+-2.5159 orange -0.2997
+-2.5159 philipps -0.2984
+-2.5159 pink -0.2997
+-2.5159 pulsieren -0.2666
+-2.5159 rot -0.2997
+-2.0388 sage -0.2970
+-1.8169 schalte -0.2821
+-2.5159 schoene -0.2997
+-2.5159 schrank -0.2970
+-2.5159 sind -0.2997
+-2.2148 song -0.2666
+-1.9138 spiele -0.2835
+-2.5159 starte -0.2997
+-2.5159 steht -0.2970
+-2.5159 stopp -0.2666
+-2.5159 tisch -0.2997
+-2.5159 uhr -0.2997
+-2.5159 uhrzeit -0.2666
+-2.2148 und -0.2984
+-2.5159 viel -0.2997
+-2.5159 vorherigen -0.2984
+-2.5159 vorheriges -0.2984
+-2.5159 was -0.2997
+-2.5159 weiss -0.2997
+-2.5159 weiter -0.2666
+-2.5159 wetter -0.2997
+-2.5159 wetterbericht -0.2997
+-2.5159 wie -0.2997
+-2.5159 wiederhole -0.2984
+-2.5159 witz -0.2666
+-2.5159 wochenbericht -0.2957
+
+\2-grams:
+-1.6990 <s> den -0.2218
+-1.6990 <s> die -0.2218
+-1.6990 <s> kannst 0.0000
+-1.6990 <s> lasse 0.0000
+-0.9208 <s> lexia 0.0000
+-1.6990 <s> licht -0.2632
+-1.3979 <s> musik -0.1761
+-1.2218 <s> sage 0.0000
+-1.2218 <s> schalte -0.0792
+-1.2218 <s> spiele -0.0969
+-1.6990 <s> starte 0.0000
+-1.6990 <s> weiss 0.0000
+-1.6990 <s> wiederhole 0.0000
+-0.3010 am bett 0.0000
+-0.3010 an </s> -0.3010
+-0.3010 anschalten </s> -0.3010
+-0.3010 antwort ist -0.1761
+-0.3010 auf automatik 0.0000
+-0.3010 aus </s> -0.3010
+-0.3010 automatik </s> -0.3010
+-0.3010 bett ein 0.0000
+-0.9031 bitte </s> -0.3010
+-0.9031 bitte das -0.1091
+-0.6021 bitte den -0.1249
+-0.3010 blau gruen 0.0000
+-0.3010 computer </s> -0.3010
+-0.4472 das licht -0.0669
+-1.1461 das naechste 0.0000
+-1.1461 das wetter 0.0000
+-0.7782 den tisch 0.0000
+-0.7782 den wetterbericht 0.0000
+-0.7782 den wochenbericht 0.0000
+-0.7782 die antwort 0.0000
+-0.7782 die musik -0.2430
+-0.7782 die uhrzeit 0.0000
+-0.3010 du bitte -0.1761
+-0.3010 ein </s> -0.3010
+-0.3010 einen witz 0.0000
+-0.3010 erzaehle einen 0.0000
+-0.3010 es ist -0.1761
+-0.3010 farben </s> -0.3010
+-0.3010 fuer heute 0.0000
+-0.3010 gruen lila 0.0000
+-0.3010 heute </s> -0.3010
+-0.6021 ist </s> -0.3010
+-0.6021 ist ja 0.0000
+-0.3010 ja und -0.1761
+-0.3010 kannst du 0.0000
+-0.3010 kims computer 0.0000
+-0.3010 lasse das -0.1091
+-0.3010 lauter oder 0.0000
+-0.3010 leiser </s> -0.3010
+-1.0792 lexia das -0.2688
+-1.0792 lexia erzaehle 0.0000
+-0.7782 lexia schalte -0.0792
+-1.0792 lexia spiele -0.2430
+-1.0792 lexia was 0.0000
+-1.0792 licht am 0.0000
+-1.0792 licht an 0.0000
+-1.0792 licht auf 0.0000
+-1.0792 licht aus 0.0000
+-1.0792 licht pulsieren 0.0000
+-1.0792 licht schrank 0.0000
+-0.3010 lied </s> -0.3010
+-0.3010 lila orange 0.0000
+-0.7782 mir bitte -0.1761
+-0.7782 mir die -0.2218
+-0.7782 mir wie 0.0000
+-0.3010 morgen </s> -0.3010
+-0.9031 musik </s> -0.3010
+-0.9031 musik lauter 0.0000
+-0.9031 musik stopp 0.0000
+-0.9031 musik weiter 0.0000
+-0.3010 naechste lied 0.0000
+-0.3010 nein </s> -0.3010
+-0.3010 oder leiser 0.0000
+-0.3010 orange pink 0.0000
+-0.3010 philipps und -0.1761
+-0.3010 pink sind 0.0000
+-0.3010 pulsieren </s> -0.3010
+-0.3010 rot blau 0.0000
+-0.3010 sage mir 0.0000
+-1.0000 schalte bitte -0.2430
+-0.5229 schalte das -0.1091
+-1.0000 schalte die -0.2218
+-0.3010 schoene farben 0.0000
+-0.3010 schrank an 0.0000
+-0.3010 sind schoene 0.0000
+-0.3010 song </s> -0.3010
+-0.9031 spiele das -0.2688
+-0.9031 spiele musik -0.2430
+-0.9031 spiele vorherigen 0.0000
+-0.9031 spiele vorheriges 0.0000
+-0.3010 starte philipps 0.0000
+-0.3010 steht an 0.0000
+-0.3010 stopp </s> -0.3010
+-0.3010 tisch anschalten 0.0000
+-0.3010 uhr es 0.0000
+-0.3010 uhrzeit </s> -0.3010
+-0.6021 und kims 0.0000
+-0.6021 und nein 0.0000
+-0.3010 viel uhr 0.0000
+-0.3010 vorherigen song 0.0000
+-0.3010 vorheriges lied 0.0000
+-0.3010 was steht 0.0000
+-0.3010 weiss rot 0.0000
+-0.3010 weiter </s> -0.3010
+-0.3010 wetter morgen 0.0000
+-0.3010 wetterbericht fuer 0.0000
+-0.3010 wie viel 0.0000
+-0.3010 wiederhole song 0.0000
+-0.3010 witz </s> -0.3010
+-0.3010 wochenbericht bitte -0.2430
+
+\3-grams:
+-0.3010 <s> den wochenbericht
+-0.3010 <s> die antwort
+-0.3010 <s> kannst du
+-0.3010 <s> lasse das
+-1.0792 <s> lexia das
+-1.0792 <s> lexia erzaehle
+-0.7782 <s> lexia schalte
+-1.0792 <s> lexia spiele
+-1.0792 <s> lexia was
+-0.3010 <s> licht schrank
+-0.6021 <s> musik stopp
+-0.6021 <s> musik weiter
+-0.3010 <s> sage mir
+-0.4771 <s> schalte das
+-0.7782 <s> schalte die
+-0.7782 <s> spiele das
+-0.7782 <s> spiele musik
+-0.7782 <s> spiele vorheriges
+-0.3010 <s> starte philipps
+-0.3010 <s> weiss rot
+-0.3010 <s> wiederhole song
+-0.3010 am bett ein
+-0.3010 antwort ist ja
+-0.3010 auf automatik </s>
+-0.3010 bett ein </s>
+-0.3010 bitte das licht
+-0.6021 bitte den tisch
+-0.6021 bitte den wetterbericht
+-0.3010 blau gruen lila
+-1.0000 das licht am
+-1.0000 das licht an
+-1.0000 das licht auf
+-1.0000 das licht aus
+-1.0000 das licht pulsieren
+-0.3010 das naechste lied
+-0.3010 das wetter morgen
+-0.3010 den tisch anschalten
+-0.3010 den wetterbericht fuer
+-0.3010 den wochenbericht bitte
+-0.3010 die antwort ist
+-0.3010 die musik lauter
+-0.3010 die uhrzeit </s>
+-0.3010 du bitte den
+-0.3010 einen witz </s>
+-0.3010 erzaehle einen witz
+-0.3010 es ist </s>
+-0.3010 fuer heute </s>
+-0.3010 gruen lila orange
+-0.3010 ist ja und
+-0.3010 ja und nein
+-0.3010 kannst du bitte
+-0.3010 kims computer </s>
+-0.3010 lasse das licht
+-0.3010 lauter oder leiser
+-0.3010 lexia das wetter
+-0.3010 lexia erzaehle einen
+-0.6021 lexia schalte bitte
+-0.6021 lexia schalte das
+-0.3010 lexia spiele vorherigen
+-0.3010 lexia was steht
+-0.3010 licht am bett
+-0.3010 licht an </s>
+-0.3010 licht auf automatik
+-0.3010 licht aus </s>
+-0.3010 licht pulsieren </s>
+-0.3010 licht schrank an
+-0.3010 lila orange pink
+-0.3010 mir bitte den
+-0.3010 mir die uhrzeit
+-0.3010 mir wie viel
+-0.3010 musik lauter oder
+-0.3010 musik stopp </s>
+-0.3010 musik weiter </s>
+-0.3010 naechste lied </s>
+-0.3010 oder leiser </s>
+-0.3010 orange pink sind
+-0.3010 philipps und kims
+-0.3010 pink sind schoene
+-0.3010 rot blau gruen
+-0.7782 sage mir bitte
+-0.7782 sage mir die
+-0.7782 sage mir wie
+-0.3010 schalte bitte das
+-0.3010 schalte das licht
+-0.3010 schalte die musik
+-0.3010 schoene farben </s>
+-0.3010 schrank an </s>
+-0.3010 sind schoene farben
+-0.3010 spiele das naechste
+-0.3010 spiele musik </s>
+-0.3010 spiele vorherigen song
+-0.3010 spiele vorheriges lied
+-0.3010 starte philipps und
+-0.3010 steht an </s>
+-0.3010 tisch anschalten </s>
+-0.3010 uhr es ist
+-0.3010 und kims computer
+-0.3010 und nein </s>
+-0.3010 viel uhr es
+-0.3010 vorherigen song </s>
+-0.3010 vorheriges lied </s>
+-0.3010 was steht an
+-0.3010 weiss rot blau
+-0.3010 wetter morgen </s>
+-0.3010 wetterbericht fuer heute
+-0.3010 wie viel uhr
+-0.3010 wiederhole song </s>
+-0.3010 wochenbericht bitte </s>
+
+\end\

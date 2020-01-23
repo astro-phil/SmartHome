@@ -1,0 +1,68 @@
+sudo chown -R $(whoami) /usr/local
+
+### Install and get needed software
+
+sudo apt-get install kodi-json
+sudo apt-get install swig libtool bison autoconf automake
+
+cd /home/pi/Jarvis/sphinxbase-5prealpha
+./configure
+make
+make install
+
+sudo apt-get install pocketsphinx
+sudo apt-get install python-pocketsphinx
+
+git clone http://people.csail.mit.edu/hubert/git/pyaudio.git
+sudo apt-get install libportaudio0 libportaudio2 libportaudiocpp0 portaudio19-dev
+sudo apt-get install  python-dev
+cd /home/pi/Jarvis/pocketsphinx/pyaudio/
+sudo python pyaudio/setup.py install
+
+sudo apt-get install pyaudio
+sudo apt-get install pulseaudio libpulse-dev
+
+cd /home/pi/Jarvis/sphinxtrain-5prealpha
+./configure
+make
+make install
+
+http://www.speech.cs.cmu.edu/tools/lmtool-new.html
+
+### For Adapting the VoiceModel
+
+sphinx_fe -argfile de-de/feat.params \
+        -samprate 16000 -c c.fileids \
+       -di . -do . -ei wav -eo mfc -mswav yes
+
+./bw \
+ -hmmdir de-de \
+ -moddeffn de-de/mdef \
+ -ts2cbfn .ptm. \
+ -feat 1s_c_d_dd \
+ -svspec 0-12/13-25/26-38 \
+ -cmn current \
+ -agc none \
+ -dictfn de.dic \
+ -ctlfn c.fileids \
+ -lsnfn c.transcription \
+ -accumdir .
+
+./map_adapt \
+    -moddeffn de-de/mdef \
+    -ts2cbfn .ptm. \
+    -meanfn de-de/means \
+    -varfn de-de/variances \
+    -mixwfn de-de/mixture_weights \
+    -tmatfn de-de/transition_matrices \
+    -accumdir . \
+    -mapmeanfn de-de-adapt/means \
+    -mapvarfn de-de-adapt/variances \
+    -mapmixwfn de-de-adapt/mixture_weights \
+    -maptmatfn de-de-adapt/transition_matrices
+
+./mk_s2sendump \
+    -pocketsphinx yes \
+    -moddeffn de-de-adapt/mdef \
+    -mixwfn de-de-adapt/mixture_weights \
+    -sendumpfn de-de-adapt/sendump
