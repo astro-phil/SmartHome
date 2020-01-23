@@ -279,7 +279,7 @@ class NewVoice(object):
                 for termin in termine:
                     if termin[4] != datetime.now().weekday():
                         if last != termin[4]:
-                            days = ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"]
+                           	days = ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"]
                             text.append(days[termin[4]])
                         else:
                             text.append("and")
@@ -292,7 +292,7 @@ class NewVoice(object):
                         text.append("event")
                     else:
                         text.append("event_7")
-                    days = ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"]
+                   	days = ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"]
                     text.append(days[termin[4]])
                     text.append(termin[0])
         if len(text) < 1:
